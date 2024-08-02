@@ -1,0 +1,33 @@
+.checkbox-alias {
+    background-color: white;
+    border: 2px solid rgb(219, 219, 219);
+    display: flex;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    transition: all 250ms ease-out;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 10px 0;
+}
+
+.invisible-checkboxes input[type=checkbox] {
+    display: none;
+}
+
+.invisible-checkboxes input[type=checkbox]:checked+.checkbox-alias {
+    border: 2px solid black;
+}
+
+.invisible-checkboxes {
+    display: flex;
+    width: 100%;
+}
+.text-white th{
+    font-weight: bolder;
+    color: black;
+}
+
